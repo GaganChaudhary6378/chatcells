@@ -6,7 +6,7 @@ import { CgNotes } from "react-icons/cg";
 import { RiLinksFill, RiDashboardFill } from "react-icons/ri";
 
 function Sidebar() {
-    const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedItem, setSelectedItem] = useState("Bank");
 
     const handleSelectItem = (itemName) => {
         setSelectedItem(itemName);

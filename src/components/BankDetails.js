@@ -38,7 +38,7 @@ function BankDetails() {
 
 
     return (
-        <div className='lg:ml-28 font-semibold '>
+        <div className='lg:ml-28 font-semibold mb-3'>
             <div className='flex flex-col lg:max-w-[800px] space-y-6 max-sm:w-screen max-sm:p-3'>
                 <div className='text-[33px] font-bold'>
                     Bank Details
@@ -47,7 +47,7 @@ function BankDetails() {
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 </div>
             </div>
-            <div className=' border-[#D3D3D3] border-[2px] border-opacity-60 mt-5 flex flex-col gap-y-8 p-6 rounded-md sm:w-[340px] max-md:m-4 lg:w-full'>
+            <div className=' border-[#D3D3D3] border-[2px] border-opacity-60 mt-5 flex flex-col gap-y-8 p-6 rounded-md sm:w-[340px] max-md:m-4 md:w-full'>
                 <div className='flex flex-col md:flex-row justify-between lg:items-center max-md:space-y-2'>
                     <div className='font-semibold'>ACCOUNT HOLDER NAME</div>
                     <input
@@ -126,8 +126,14 @@ function BankDetails() {
                 </div>
             </div>
 
-            <div>
+            <div className='lg:w-[900px] max-sm:hidden max-sm:p-3 border-b border-[#D3D3D3] pb-6 mt-3 font-extralight flex flex-col justify-center items-center'>
+                <div>THE ABOVE DETAILS ARE FINAL AND WILL BE USED FOR PAYMENT. IF ANY OF THESE DETAILS ARE WRONG, PLEASE </div>
+                <div> CONTACT YOUR MANAGER IMMEDIATELY! ALSO EMAIL THE SAME TO ACCOUNTS@EXAMBAZAAR.COM!</div>
 
+            </div>
+            <div className='lg:w-[900px] lg:hidden md:hidden max-sm:p-3 border-b border-[#D3D3D3] pb-6 mt-3 font-extralight flex flex-col justify-center items-center text-center'>
+                THE ABOVE DETAILS ARE FINAL AND WILL BE USED FOR PAYMENT. IF ANY OF THESE DETAILS ARE WRONG, PLEASE
+                CONTACT YOUR MANAGER IMMEDIATELY! ALSO EMAIL THE SAME TO ACCOUNTS@EXAMBAZAAR.COM!
             </div>
         </div>
     )

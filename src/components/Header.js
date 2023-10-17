@@ -10,7 +10,7 @@ import { RiLinksFill, RiDashboardFill } from "react-icons/ri";
 
 function Header() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    const [activeComponent, setActiveComponent] = useState("");
+    const [activeComponent, setActiveComponent] = useState("Home");
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
     };
